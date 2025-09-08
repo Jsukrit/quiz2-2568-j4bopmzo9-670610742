@@ -15,6 +15,8 @@ export default function FoodTracker() {
   const [items, setItems] = useState<FoodItem[]>([]);
   const categories = ["Main Course", "Drink", "Dessert"];
 
+  
+
   return (
     <Container style={{ maxWidth: 600, margin: "auto", padding: 20 }}>
       <Title order={2} mb="md">
@@ -26,7 +28,9 @@ export default function FoodTracker() {
       <Divider my="md" />
       {/* Type additional total cost here. */}
       <Title order={4}>Total cost: {} Baht</Title>
-      <Stack my="sm">{/* Type additional text here. */}</Stack>
+      <Stack my="sm">Main Course: {} Bath</Stack>
+      <Stack my="sm">Drink: {} Bath</Stack>
+      <Stack my="sm">Dessert: {} Bath</Stack>
 
       <Divider my="md" />
       {/* Type additional card here. */}
